@@ -8,5 +8,9 @@ public class MatchingWithRegexAPI {
         System.out.println(Pattern.matches("Reya*m", "Reyaam"));
         System.out.println(Pattern.matches(
                 "geeksforge*ks", "geeksforgeeks"));
+
+        System.out.println(Pattern.matches("Rifattt.*", "Rifattt"));
+
+
     }
 }
