@@ -13,6 +13,16 @@ public class CountNumberOfMatch {
         Pattern pa = Pattern.compile(regex);
         Matcher ma = pa.matcher(input);
 
+        boolean b = ma.matches();
+        if(b)
+        {
+            System.out.println("matches : " );
+        }
+        else
+        {
+            System.out.println("no match : ");
+        }
+
         int count = 0;
         while(ma.find())
         {

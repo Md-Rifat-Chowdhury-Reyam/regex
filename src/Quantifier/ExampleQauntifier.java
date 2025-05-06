@@ -2,7 +2,7 @@ package Quantifier;
 import java.util.regex.*;
 
 
-public class DefaultQauntifier {
+public class ExampleQauntifier {
     public static void main(String[] args) {
 
         //Greedy Quantifier (Default):
@@ -51,17 +51,22 @@ public class DefaultQauntifier {
         System.out.println("Using Greedy Quantifier");
         Matcher mg = pg.matcher("ggg");
 
+
+
         while (mg.find()) {
             System.out.println("Pattern found from " + mg.start() +
                     " to " + (mg.end() - 1));
+
         }
 
         System.out.println("\nUsing Possessive Quantifier");
         Matcher mp = pp.matcher("ggg");
 
+
         while (mp.find()) {
             System.out.println("Pattern found from " + mp.start() +
                     " to " + (mp.end() - 1));
+
 
         }
     }
